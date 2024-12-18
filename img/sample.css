@@ -1,0 +1,23 @@
+.class-1{
+    display: flex;
+    background-color: aqua;
+    gap: 10px;
+    width: 50%;
+    height: 50vh;
+    flex-wrap: wrap;
+    
+}
+
+.class-1 div{
+height: 80px;
+width: 120px;
+background-color: black;
+}
+
+.class-1 > div{
+    flex-grow: 1;
+}
+
+.class-1 > div > div{
+    flex-grow: 1;
+}
