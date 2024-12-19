@@ -17,6 +17,7 @@ html, body{
     overflow-x: hidden;
 }
 
+
 header {
     width: 100vw;
     height: 100vh;
@@ -136,9 +137,11 @@ p{
 
 .row .ctn{
     margin-top: 30px;
-}
-.row .col img{
-    /* width: 80%; */
+
+}    
+
+.events-row .col img{
+    width: 80%;
 }
 
 .explore{
@@ -189,21 +192,75 @@ p{
     width: 100vw;
     flex-wrap: wrap;
 }
-.tours .row .col{
-    width: 50%;
+
+.content-col
+{
+    width: 40%;
+    /* background: red; */
+    position: relative;
+    padding: 20px;
 }
 
-.tours .image-galler{
-
+.image-col
+{
+    width: 60%;
 }
 
+.tours .image-gallery{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+align-items: center;
+
+}
 
 .image-gallery img{
-    width: 20rem;
-    height: 15rem;
+    width: 300px; 
+    height: 200px;
+    margin: 10px;
 }
 
-@media only screen and (max-width: 450px){
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+
+.content-col .line{
+    margin-left: -1px;
+}
+
+.content-col p{
+    margin: 30px auto;
+    /* padding: 40px; */
+}
+
+.content-col .ctn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 40px;
+    
+}
+
+/* Footer */
+.footer
+{
+    width: 100%;
+    min-height: 200px;
+    padding: 20px 80px ;
+    margin: 0;
+    background-color: #484872;
+    text-align: center;
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto ;
+    padding: 20px auto;
+}
+
+/* Mobile Size */
+@media only screen and (max-width: 850px){
 
     .menu-btn{
         display: block;
